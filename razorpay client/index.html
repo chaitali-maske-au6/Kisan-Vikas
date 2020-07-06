@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form class="order__form">
+    <input required type="text" name="name" placeholder="Enter your name"/>
+    <input required type="text" name="email" placeholder="Enter your email"/>
+    <input required type="number" name="amount" placeholder="Enter your amount" />
+    <input required type="text" name="currency" placeholder="Enter your currency"/>
+    <input type="submit" value="Create order" />
+  </form>
+
+  <section style="display: none" class="order__details">
+    <h1>Order Details</h1>
+    <span class="order__name" ></span>
+    <span class="order__amount" ></span>
+    <span class="order__id" ></span>
+    <button class="order__pay">Pay</button>
+  </section>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
